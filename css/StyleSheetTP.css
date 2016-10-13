@@ -1,0 +1,519 @@
+ul {
+    padding-left: 0;
+}
+
+body {
+    margin: 0;
+
+}
+
+header {
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.headerMenu {
+    list-style: none;
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+}
+
+.headerMenu li {
+    text-decoration: none;
+    padding: 5px;
+    color: black;
+}
+
+.headerMenu a {
+    font: 15px/30px 'Avenir', Arial, sans-serif;
+    text-transform: uppercase;
+    border: none;
+    background-color: transparent;
+    padding: 10px;
+}
+
+.headerMenu a:hover {
+    background-color: #00BD9B;
+    padding: 10px;
+    border-radius: 2px;
+    color: white;
+    cursor: pointer;
+}
+
+.brand {
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+
+}
+
+.brand img {
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+    margin-top: 5px;
+    height: 55px;
+    font-size: 10px;
+}
+
+.logo span:first-child {
+    font: 600 21px/20px 'Lato';
+
+}
+
+.logo span:last-child {
+    font: 300 16px/20px 'Lato';
+
+}
+
+.logo span {
+    font-size: 16pt;
+    line-height: 0.8em;
+    margin: 0px;
+}
+
+.sectionPhoto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url("../images/jumbotron.png");
+    background-size: cover;
+    height: 450px;
+    width: 100%;
+    margin-top: 15px;
+    padding: 50px 0;
+}
+
+.sectionPhoto span {
+    color: white;
+    font: 100 40px/30px 'Lato', sans-serif;
+}
+
+.sectionPhoto p {
+    font: 100 17px/30px 'Lato', sans-serif;
+    color: white;
+    text-align: center;
+}
+
+.sectionPhoto button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.sectionPhoto a {
+    font: 14px/20px 'Avenir', Arial, sans-serif;
+    letter-spacing: 2px;
+    background-color: #00BD9B;
+    padding: 10px;
+    border-radius: 1px;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+.sectionMain {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.sectionMain span {
+    font: 17px/20px 'Avenir', Arial, sans-serif;
+}
+
+.sectionMain .title {
+    font: 400 30px/30px 'Avenir', Arial, sans-serif;
+    letter-spacing: 1px;
+    padding: 40px 0 20px 0;
+}
+
+.sectionMenu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.sectionMenu li {
+    display: block;
+    padding: 10px;
+}
+
+.sectionMenu a {
+    font: 14px/20px 'Avenir', Arial, sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background-color: #00BD9B;
+    padding: 10px;
+    border-radius: 2px;
+    color: white;
+    cursor: pointer;
+}
+
+.sectionImageMenu {
+    margin: 0 auto;
+    max-width: 1000px;
+    margin-bottom: 50px;
+}
+
+.sectionImage {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/*
+.sectionImage span{
+    display: block;
+}*/
+.sectionImage a {
+    position: relative;
+    text-align: center;
+    width: 180px;
+    height: 180px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.sectionImage i {
+    position: absolute;
+    display: none;
+    top: 50px;
+    left: 0;
+    right: 0;
+}
+
+.sectionImage img {
+    width: 180px;
+    height: 180px;
+}
+
+.sectionImage a span {
+    font: 200 13px "museo-sans", Arial, serif;
+    letter-spacing: 2px;
+    position: absolute;
+    text-transform: uppercase;
+    top: 100px;
+    left: 0;
+    right: 0;
+    display: none;
+}
+
+.sectionImage a:hover span {
+    display: inline-block;
+}
+
+.sectionImage a:hover i {
+    display: inline-block;
+}
+
+.sectionImage a:hover img {
+    opacity: 0.5;
+}
+
+.personalsWrapper {
+    background-color: #01A187;
+    padding-top: 20px;
+    padding-bottom: 40px
+}
+
+.personalsWrapper div {
+    text-align: center;
+}
+
+.personalsWrapper h3 {
+    color: white;
+    font: 30px 'Avenir', Arial, sans-serif;
+}
+
+.personalsWrapper p {
+    color: white;
+    font: 100 15px 'Lato', Arial, sans-serif;
+    letter-spacing: 1px;
+}
+
+.sectionPersonals {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.sectionPerson {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 220px;
+    margin: 40px;
+    background-color: white;
+    cursor: pointer;
+
+}
+
+.sectionPerson:hover .personSocials {
+    display: block;
+}
+
+.personName {
+    color: #4e4d4d;
+    font: 400 18px 'Lato', Arial, sans-serif;
+    letter-spacing: 1px;
+    margin-top: 15px;
+}
+
+.personPosition {
+    color: #4e4d4d;;
+    font: 400 13px 'Lato', Arial, sans-serif;
+    font-style: italic;
+}
+
+.sectionPerson p {
+    margin: 10px;
+    color: #4e4d4d;
+    font: 300 13px 'Lato', Arial, sans-serif;
+}
+
+.personSocials {
+    display: none;
+    position: absolute;
+    top: 100px;
+}
+
+.personSocials ul {
+    background: rgba(0, 171, 145, 0.5);
+    list-style: none;
+    margin: 0;
+}
+
+.personSocials li {
+    color: #ffffff;
+    display: inline-block;
+    text-decoration: none;
+    margin: 5px;
+}
+
+.contactsWrapper {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #eeeeee
+}
+
+.contactsWrapper div:first-child {
+    text-align: center;
+}
+
+.contactsWrapper span {
+    font: 400 30px 'Lato';
+    color: #4e4d4d;
+}
+
+.contactsWrapper p {
+    font: 300 14px 'Lato';
+    color: #4e4d4d;
+}
+
+.contactsColumn {
+    width: 450px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contactsColumn .submit {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100px;
+    font: 13px 'Lato';
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border: none;
+    background-color: #00BD9B;
+    color: white;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.contactsColumn span {
+    font: 300 15px/29px 'Lato';
+    color: #4e4d4d;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.sectionContacts {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.sectionContacts input {
+    width: 180px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 15px;
+    border: #a6a6a6 2px solid;
+}
+
+.sectionContacts textarea {
+    box-sizing: border-box;
+    border: #a6a6a6 2px solid;
+    padding: 15px;
+    width: 450px;
+    height: 150px;
+}
+
+.sectionContacts textarea::-webkit-input-placeholder {
+    color: #a6a6a6;
+    font: 13px 'Lato';
+    font-style: italic;
+}
+
+.sectionContacts textarea::-moz-placeholder {
+    color: #a6a6a6;
+    font: 13px 'Lato';
+    font-style: italic;
+}
+
+.sectionContacts textarea:-moz-placeholder {
+    color: #a6a6a6;
+    font: 13px 'Lato';
+    font-style: italic;
+}
+
+.sectionContacts textarea:-ms-input-placeholder {
+    color: #a6a6a6;
+    font: 13px 'Lato';
+    font-style: italic;
+}
+
+.sectionContacts input::-webkit-input-placeholder {
+    color: #a6a6a6;
+    font: 13px 'Lato';
+    font-style: italic;
+}
+
+.sectionContacts input::-moz-placeholder {
+    color: #a6a6a6;
+    font: 13px 'Lato';
+    font-style: italic;
+}
+
+.sectionContacts input:-moz-placeholder {
+    color: #a6a6a6;
+    font: 13px 'Lato';
+    font-style: italic;
+}
+
+.sectionContacts input:-ms-input-placeholder {
+    color: #a6a6a6;
+    font: 13px 'Lato';
+    font-style: italic;
+}
+
+.sectionContactsText {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.sectionForms {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 20px;
+}
+
+.addressColumn {
+    display: flex;
+    flex-direction: column;
+    font: 400 15px 'Lato';
+}
+
+.addressRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.addressRow p {
+    margin: 0;
+    padding-left: 5px;
+    text-align: left;
+    line-height: 20px;
+}
+
+.addressRow i {
+    margin-top: 3px;
+}
+
+.phone {
+    font: 300 15px 'Lato';
+    margin-top: 20px;
+}
+
+.fax {
+    font: 300 15px 'Lato';
+    margin-top: 20px;
+}
+
+.mail {
+    font: 300 15px 'Lato';
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+.mail a {
+    text-decoration: none;
+    color: #4e4d4d;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font: 200 14px 'Lato';
+    background-color: #1F3B50;
+    padding: 25px;
+}
+
+footer span{
+    color: white;;
+}
+footer button {
+    width: 40px;
+    height: 40px;
+    background-color: #00BD9B;
+    border: none;
+    cursor: pointer;
+}
+
