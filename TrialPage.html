@@ -10,15 +10,30 @@
 
 </head>
 <body>
+<script>
+    function myFunction() {
+        var x = document.querySelector(".headerMenu");
+        if (x.className === "headerMenu") {
+            x.className += " open";
+        } else {
+            x.className = "headerMenu";
+        }
+    }
+</script>
 <header>
-    <div class="brand">
-        <img src="images/b-logo.png">
-        <div class="logo">
-                <span>BAK-ONE</span>
-                <span>One Page Flat Template</span>
-        </div>
-    </div>
     <ul class="headerMenu">
+        <li>
+            <div class="brand">
+                <img src="images/b-logo.png">
+                <div class="logo">
+                    <span>BAK-ONE</span>
+                    <span>One Page Flat Template</span>
+                </div>
+            </div>
+        </li>
+        <li class="burger" onclick="myFunction()">
+            ☰
+        </li>
         <li>
             <a>
                 Home
@@ -39,6 +54,7 @@
                 Contact
             </a>
         </li>
+
     </ul>
 </header>
 <section class="sectionPhoto">
@@ -63,7 +79,7 @@
     <span>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
     </span>
-    <ul class="sectionMenu">
+    <ul class="sectionMenu ">
         <li>
             <a>
                 all
@@ -258,7 +274,7 @@
                 <input type="text" name="q" placeholder="Your email"/>
             </div>
             <div>
-                <textarea name="q"  placeholder="Your massage"></textarea>
+                <textarea name="q" placeholder="Your massage"></textarea>
             </div>
             <button class="submit" type="submit">submit</button>
         </form>

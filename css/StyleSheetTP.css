@@ -11,20 +11,12 @@ header {
     max-width: 1000px;
     margin: 0 auto;
     margin-top: 20px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
 
 }
 
 .headerMenu {
     list-style: none;
-    margin: 0px;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
+    margin: 0;
 
 }
 
@@ -32,6 +24,49 @@ header {
     text-decoration: none;
     padding: 5px;
     color: black;
+    float: right;
+}
+
+.headerMenu li:first-child {
+    float: left;
+}
+
+.burger {
+    padding: 15px;
+    margin: 10px;
+    display: none;
+    cursor: pointer;
+}
+
+.burger:hover{
+    background-color: #00f6d9;
+    opacity: 0.5;
+}
+
+@media screen and (max-width: 680px) {
+    ul.headerMenu {
+        display: block;
+    }
+
+    ul.headerMenu li:not(:first-child) {
+        display: none;
+    }
+
+    ul.headerMenu li.burger {
+        float: right;
+        display: inline-block;
+    }
+
+    ul.headerMenu.open li:not(.burger) {
+        float: none;
+        display: inline;
+    }
+
+
+    ul.headerMenu.open li a {
+        display: block;
+        text-align: right;
+    }
 }
 
 .headerMenu a {
@@ -51,8 +86,7 @@ header {
 }
 
 .brand {
-    display: flex;
-    flex-direction: row;
+    display: inline-block;
     margin-left: 10px;
 
 }
@@ -61,6 +95,7 @@ header {
     height: 50px;
     width: 50px;
     cursor: pointer;
+    float: left;
 }
 
 .logo {
@@ -70,6 +105,7 @@ header {
     margin-top: 5px;
     height: 55px;
     font-size: 10px;
+    float: left;
 }
 
 .logo span:first-child {
@@ -85,7 +121,7 @@ header {
 .logo span {
     font-size: 16pt;
     line-height: 0.8em;
-    margin: 0px;
+    margin: 0;
 }
 
 .sectionPhoto {
@@ -183,12 +219,12 @@ header {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    margin: 0 auto;
+    max-width: 1000px;
+    margin-bottom: 50px;
 }
 
-/*
-.sectionImage span{
-    display: block;
-}*/
+
 .sectionImage a {
     position: relative;
     text-align: center;
@@ -506,9 +542,10 @@ footer {
     padding: 25px;
 }
 
-footer span{
+footer span {
     color: white;;
 }
+
 footer button {
     width: 40px;
     height: 40px;
